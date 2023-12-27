@@ -1,5 +1,6 @@
 class Restaurant:
-    def __init__(self, name, rent, menu=[] ) -> None:
+    def __init__(self, name, rent, menu=None ) -> None:
+        menu = [] if menu is None else menu
         self.name = name
         self.orders = []
         self.chef = None
